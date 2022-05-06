@@ -1,0 +1,248 @@
+/* [header] */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.menu ul {
+  display: flex;
+}
+.menu li{
+  margin-right: 50px;
+  font-family: Klee;
+  font-weight: bold;
+  font-size: 20px;
+}
+.menu a{
+  color:inherit;
+}
+
+/* アクセス */
+.contents_access{
+  font-family: Klee;
+  margin-bottom: 35px;
+}
+.contents_access h3{
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.contents_access p{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.contents_access_info{
+  background-image: url(../img/水彩緑円.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.contents_access_info h4{
+  font-weight: bold;
+  padding-top: 60px;
+  text-align: center;
+  font-size: 30px;
+}
+.contents_access_items{
+  display: flex;
+  justify-content: space-around;
+}
+.contents_access_info p{
+  font-size: 25px;
+  padding-top: 40px;
+}
+
+
+
+
+
+/* footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: #3cb371 1px solid;
+}
+footer ul{
+  display: flex;
+}
+footer li{
+  margin-right: 30px;
+  font-weight: bold;
+  font-size: 25px;
+  color:inherit;
+  height: 30px;
+}
+footer li a{
+  color:inherit;
+}
+
+
+
+.nav_toggle{
+  display: none;
+}
+.nav {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .menu{
+    display: none;
+  }
+  .nav_toggle {
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+    margin-right: 10px;
+    z-index: 2;
+  }
+  .nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  .nav_toggle i:nth-child(1) {
+    top: 0;
+  }
+  .nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .nav_toggle i:nth-child(3) {
+    bottom: 0;
+  }
+    /* クリックされた後のハンバーガーのマーク */
+    .nav_toggle.show i:nth-child(1) {
+      transform: translateY(10px) rotate(-45deg);
+    }
+    .nav_toggle.show i:nth-child(2) {
+      opacity: 0;
+    }
+    .nav_toggle.show i:nth-child(3) {
+      transform: translateY(-12px) rotate(45deg);
+    }
+  
+    /* クリックで表示されるメニュー：クリックされる前 */
+    .nav {
+      display: flex;
+      position: absolute;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding-top: 50px;
+      top: 0; 
+      left: 0;
+      right: 0;
+      bottom: 0; 
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s, visibility 0.5s;
+      background-color: rgba(0,0,0,0.8);
+      z-index: 1;
+    }
+    .nav_menu_li {
+      padding-top: 10px;
+      height: 30px;
+      width: 150px;
+      margin-bottom: 20px;
+      margin-top: 25px;
+      background-color: #f0e68c;
+      border: #f0e68c 1px solid;
+      border-radius: 100vh;
+      text-align: center;
+    }
+    .nav_menu_li a {
+      color: black;
+      text-decoration: none;
+      font-family: Klee;
+    }
+  
+    /* クリックで表示されるメニュー：クリックされた後 */
+    .nav.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    .harvest_top h1{
+      font-size: 35px !important;
+    }
+    .harvest_main_fild1{
+      flex-direction: column;
+    }
+    .harvest_main_fild2{
+      flex-direction: column;
+    }
+    .fild2_text{
+      order: 2;
+    }
+    .fild2_img{
+      order: 1;
+    }
+    .fild2_img img{
+      width: 100%;
+    }
+    .fild1_img img{
+      width: 100%;
+    }
+    .text_price {
+      padding-bottom: 5px;
+      border-bottom: 1px black solid;
+    }
+    .text_kinds{
+      border-bottom: 1px black solid;
+    }
+    .text_kinds h4{
+      padding-top: 10px;
+    }
+    .text_syousai{
+      border-bottom: 1px black solid ;
+      padding-bottom: 5px;
+    }
+    .text_syousai h4{
+      padding-top: 10px;
+    }
+    .common_form {
+      width: 80% ;
+    }
+    .footer-list{
+      display: none;
+    }
+    .contact_top h1{
+      font-size: 35px;
+    }
+    .contact_main h2{
+      font-size: 25px;
+      text-align: center;
+    }
+    .contents_form_body table{
+      width: 100%;
+    }
+    .contents_access h3{
+      font-size: 40px;
+    }
+    .contents_access_items{
+      flex-direction: column;
+    }
+    .contents_access_map {
+      margin-bottom: 30px;
+    }
+    .contents_access_map iframe{
+      width: 100%;
+    }
+    header img{
+      width: 90% ;
+    }
+    header a{
+      width: 90%;
+    }
+}

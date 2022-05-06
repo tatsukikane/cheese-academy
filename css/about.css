@@ -1,0 +1,316 @@
+/* [header] */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.menu ul {
+  display: flex;
+}
+.menu li{
+  margin-right: 50px;
+  font-family: Klee;
+  font-weight: bold;
+  font-size: 20px;
+}
+.menu a{
+  color:inherit;
+}
+
+/* [about.html用] */
+body{
+  font-family: Klee;
+}
+.about_top{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.about_top h1{
+  font-size: 60px;
+  text-align: center;
+}
+.about_main h2{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/*             トップ画像切り替え */
+.main_slider{
+  /* 上下にボーダーを入れる　マージンを指定 */
+  border-top: double 8px #66cdaa;
+  border-bottom: double 8px #66cdaa;
+  height: 600px;
+  margin-bottom: 20px;
+}
+.main_slider_item{
+  width: 100%;
+}
+.main_slider_item img{
+  width: 100%;
+  height: 600px;
+}
+
+/* ハンバーガーメニュー */
+/* PCでは非表示にしておく */
+
+.nav_toggle{
+  display: none;
+}
+.nav {
+  display: none;
+}
+
+
+
+
+
+/*       文字列スライド部分 */
+.loop_wrap{
+  display: flex;
+  font-size: 40px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  overflow: hidden;
+}
+.loop_wrap div {
+  white-space: nowrap;
+  flex: none;
+}
+.loop_wrap div:nth-child(odd) {
+  /* 50秒間アニメーションさせる 速度-25秒 一定の速度で始まって終わる 無限に */
+  animation: loop 50s -25s linear infinite;
+}
+
+.loop_wrap div:nth-child(even) {
+  /* 速度の差異を作って交互に同じ文が流れるようにする */
+  animation: loop2 50s linear infinite;
+}
+@keyframes loop {
+  /* 横軸のスタート位置と終了位置を指定してる */
+  0% {
+    /* アニメーションの開始時点の指定 */
+    transform: translateX(100%);
+  }
+  to {
+    /* アニメーションの終了時点の指定 */
+    transform: translateX(-100%);
+  }
+}
+/*keyframesをふたつに分けて書き、スタート位置と終了位置を逆にすることで同じ文が交互に出てる */
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+.about_main_text_p{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.about_main_text_p p{
+  padding-bottom: 20px;
+}
+.about_main_info{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  background-color: #66cdaa;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+}
+.about_main_info p{
+  padding-bottom: 8px;
+}
+/* 生産者 */
+.about_seisan h2{
+  text-align: center;
+  font-size: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.about_seisan_filed{
+  border-top: double 8px #66cdaa;
+  border-bottom: double 8px #66cdaa;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.about_seisan_filed_text{
+  text-align: center;
+}
+.about_seisan_filed_text h3{
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.under{
+  background: linear-gradient(transparent 70%, yellow 70%);
+}
+.about_seisan_filed_text p{
+  font-size: 20px;
+}
+
+/* お問い合わせ */
+.common_form{
+  width: 50%;
+  margin: 50px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  background-color: #3cb371;
+  border-radius: 20px;
+  color: white;
+}
+.common_form p {
+  padding-bottom: 8px;
+}
+
+/* footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: #3cb371 1px solid;
+}
+footer ul{
+  display: flex;
+}
+footer li{
+  margin-right: 30px;
+  font-weight: bold;
+  font-size: 25px;
+  color:inherit;
+  height: 30px;
+}
+footer li a{
+  color:inherit;
+}
+
+
+@media screen and (max-width: 480px) {
+  .menu{
+    display: none;
+  }
+  .nav_toggle {
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+    margin-right: 10px;
+    z-index: 2;
+  }
+  .nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  .nav_toggle i:nth-child(1) {
+    top: 0;
+  }
+  .nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .nav_toggle i:nth-child(3) {
+    bottom: 0;
+  }
+    /* クリックされた後のハンバーガーのマーク */
+    .nav_toggle.show i:nth-child(1) {
+      transform: translateY(10px) rotate(-45deg);
+    }
+    .nav_toggle.show i:nth-child(2) {
+      opacity: 0;
+    }
+    .nav_toggle.show i:nth-child(3) {
+      transform: translateY(-12px) rotate(45deg);
+    }
+  
+    /* クリックで表示されるメニュー：クリックされる前 */
+    .nav {
+      display: flex;
+      position: absolute;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding-top: 50px;
+      top: 0; 
+      left: 0;
+      right: 0;
+      bottom: 0; 
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s, visibility 0.5s;
+      background-color: rgba(0,0,0,0.8);
+      z-index: 1;
+    }
+    .nav_menu_li {
+      padding-top: 10px;
+      height: 30px;
+      width: 150px;
+      margin-bottom: 20px;
+      margin-top: 25px;
+      background-color: #f0e68c;
+      border: #f0e68c 1px solid;
+      border-radius: 100vh;
+      text-align: center;
+    }
+    .nav_menu_li a {
+      color: black;
+      text-decoration: none;
+      font-family: Klee;
+    }
+  
+    /* クリックで表示されるメニュー：クリックされた後 */
+    .nav.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .footer-list{
+      display: none;
+    }
+    .about_top h1{
+      font-size: 30px;
+    }
+    .about_main h2{
+      font-size: 20px;
+    }
+    .main_slider_item img{
+      height: 50%;
+    }
+    .main_slider{
+      height: 40%;
+    }
+    .main_slider_item img{
+      height: 40%;
+    }
+    .about_seisan_filed {
+      display: block ;
+    }
+    .about_seisan_filed_img {
+      text-align: center;
+      padding-top: 10px;
+    }
+    .common_form {
+      width: 80% ;
+    }
+    header img{
+      width: 90% ;
+    }
+    header a{
+      width: 90%;
+    }
+}

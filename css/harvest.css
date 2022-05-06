@@ -1,0 +1,285 @@
+/* header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.menu ul {
+  display: flex;
+}
+.menu li{
+  margin-right: 50px;
+  font-family: Klee;
+  font-weight: bold;
+  font-size: 20px;
+}
+.menu a{
+  color:inherit;
+}
+
+/* ハンバーガーメニュー */
+
+/* PCでは非表示 */
+.nav_toggle{
+  display: none;
+}
+.nav {
+  display: none;
+}
+
+/* トップ */
+body{
+  font-family: Klee;
+}
+.harvest_top{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.harvest_top h1{
+  font-size: 60px;
+  text-align: center;
+}
+.harvest_main h2{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* メイン部分 */
+.under{
+  background: linear-gradient(transparent 70%, yellow 70%);
+}
+.harvest_main_fild1{
+  display: flex;
+}
+/* .fild1_text{
+} */
+.fild1_text h3{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.text_price h4{
+  font-size: 23px;
+  padding-bottom: 10px;
+}
+.text_price p{
+  font-size: 23px;
+  padding-bottom: 10px;
+}
+table{
+  font-size: 20px;
+}
+
+th{
+  text-align: left;
+  padding-bottom: 10px;
+}
+td{
+  padding-left: 30px;
+}
+.text_kinds h4{
+  font-size: 23px;
+  padding-bottom: 10px;
+}
+.text_kinds p{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.text_syousai h4{
+  font-size: 23px;
+  padding-bottom: 10px;
+}
+.text_syousai p{
+  font-size: 20px;
+}
+.harvest_main h3{
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.harvest_main_fild2{
+  display: flex;
+  align-items:center;
+}
+.fild2_text {
+  font-size: 25px;
+}
+.fild2_text p{
+  padding-bottom: 20px;
+}
+
+
+/* お問い合わせ */
+.common_form{
+  width: 50%;
+  margin: 50px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  background-color: #3cb371;
+  border-radius: 20px;
+  color: white;
+}
+.common_form p {
+  padding-bottom: 8px;
+}
+
+/* footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: #3cb371 1px solid;
+}
+footer ul{
+  display: flex;
+}
+footer li{
+  margin-right: 30px;
+  font-weight: bold;
+  font-size: 25px;
+  color:inherit;
+  height: 30px;
+}
+footer li a{
+  color:inherit;
+}
+
+@media screen and (max-width: 480px) {
+  .menu{
+    display: none;
+  }
+  .nav_toggle {
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+    margin-right: 10px;
+    z-index: 2;
+  }
+  .nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  .nav_toggle i:nth-child(1) {
+    top: 0;
+  }
+  .nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .nav_toggle i:nth-child(3) {
+    bottom: 0;
+  }
+    /* クリックされた後のハンバーガーのマーク */
+    .nav_toggle.show i:nth-child(1) {
+      transform: translateY(10px) rotate(-45deg);
+    }
+    .nav_toggle.show i:nth-child(2) {
+      opacity: 0;
+    }
+    .nav_toggle.show i:nth-child(3) {
+      transform: translateY(-12px) rotate(45deg);
+    }
+  
+    /* クリックで表示されるメニュー：クリックされる前 */
+    .nav {
+      display: flex;
+      position: absolute;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding-top: 50px;
+      top: 0; 
+      left: 0;
+      right: 0;
+      bottom: 0; 
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s, visibility 0.5s;
+      background-color: rgba(0,0,0,0.8);
+      z-index: 1;
+    }
+    .nav_menu_li {
+      padding-top: 10px;
+      height: 30px;
+      width: 150px;
+      margin-bottom: 20px;
+      margin-top: 25px;
+      background-color: #f0e68c;
+      border: #f0e68c 1px solid;
+      border-radius: 100vh;
+      text-align: center;
+    }
+    .nav_menu_li a {
+      color: black;
+      text-decoration: none;
+      font-family: Klee;
+    }
+  
+    /* クリックで表示されるメニュー：クリックされた後 */
+    .nav.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    .harvest_top h1{
+      font-size: 35px;
+    }
+    .harvest_main_fild1{
+      flex-direction: column;
+    }
+    .harvest_main_fild2{
+      flex-direction: column;
+    }
+    .fild2_text{
+      order: 2;
+    }
+    .fild2_img{
+      order: 1;
+    }
+    .fild2_img img{
+      width: 100%;
+    }
+    .fild1_img img{
+      width: 100%;
+    }
+    .text_price {
+      padding-bottom: 5px;
+      border-bottom: 1px black solid;
+    }
+    .text_kinds{
+      border-bottom: 1px black solid;
+    }
+    .text_kinds h4{
+      padding-top: 10px;
+    }
+    .text_syousai{
+      border-bottom: 1px black solid ;
+      padding-bottom: 5px;
+    }
+    .text_syousai h4{
+      padding-top: 10px;
+    }
+    .common_form {
+      width: 80% ;
+    }
+    .footer-list{
+      display: none;
+    }
+    header img{
+      width: 90% ;
+    }
+    header a{
+      width: 90%;
+    }
+}

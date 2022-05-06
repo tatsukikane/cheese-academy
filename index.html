@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>群馬須賀農園</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- スライド用css -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+</head>
+<!-- 最初の設定は終わっています 必要な方は触ってください -->
+
+<body>
+  <!-- ヘッダー 上の部分 -->
+  <header>
+    <div class="header_main">
+      <img src="./img/rogo.png" alt="ロゴ" height="60" width="400">
+      <div class="menu">
+        <ul>
+          <li><a href="./pagehtml/about.html">群馬須賀農園とは</a></li>
+          <li><a href="https://gunma-sugafarm.com/about-sugafarm/oyasai-ichiba/">販売所</a></li>
+          <li><a href="./pagehtml/harvest.html">収穫体験</a></li>
+          <li><a href="./pagehtml/contact.html">お問い合わせ</a></li>
+          <li><a href="./pagehtml/acess.html">アクセス</a></li>
+        </ul>
+      </div>
+      <!-- ハンバーガーメニュー -->
+      <span class="nav_toggle">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+      <nav class="nav">
+        <ul class="nav_menu_ul">
+          <li class="nav_menu_li"><a href="./pagehtml/about.html">群馬須賀農園とは</a></li>
+          <li class="nav_menu_li"><a href="https://gunma-sugafarm.com/about-sugafarm/oyasai-ichiba/">販売所</a></li>
+          <li class="nav_menu_li"><a href="./pagehtml/harvest.html">収穫体験</a></li>
+          <li class="nav_menu_li"><a href="./pagehtml/contact.html">お問い合わせ</a></li>
+          <li class="nav_menu_li"><a href="./pagehtml/acess.html">アクセス</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+
+  </header>
+  <!-- コンテンツ欄 -->
+  <div class="contents">
+    <!-- トップ画像欄 -->
+    <div class="contents_top">
+      <p class="eachTextAnime eachTextAnimePd">~Farm to Table~</p>
+      <p class="eachTextAnime">田舎生まれこだわり農園育ちの新鮮野菜を産地直送であなたの食卓へお届けします。</p>
+    </div>
+
+    <!-- 須賀農園説明欄 -->
+    <div class="contents_about">
+      <div class="contents_about_top">about</div>
+      <div class="contents_about_text">
+        <p>須賀農園は群馬県の大自然に囲まれた農園です</p>
+        <p>昔、田舎のおじいちゃんの家で食べた、やさしさたっぷりのみずみずしい獲れたて野菜。</p>
+        <p>群馬須賀農園は、そんなからだにもこころにも優しい美味しい野菜をめざして、</p>
+        <p>「新鮮野菜」をモットーに群馬の大自然の中で我が子の様にのびのびお野菜を育てています。</p>
+      </div>
+    </div>
+
+    <!-- トピック欄 -->
+    <div class="guide">
+      <h1>guide</h1>
+      <div class="contents_filed">
+        <!-- 3つの画像と文字を交互に縦並び リンク作る-->
+        <div class="contents_filed_card">
+          <div class="card_img">
+            <img src="./img/須賀さんリサイズ.png" alt="生産者">
+          </div>
+          <div class="card_text">
+            <h2 class="text_seisan"><a href="./pagehtml/about.html">〖生産者〗</a></h2>
+            <h3><span class="under">須賀 拓真(すが たくま)</span></h3>
+            <p>生まれも育ちも群馬の上州男子！</p>
+            <p>「新鮮野菜」をモットーに土壌からこだわり抜いて、体にもこころにも優しいお野菜を作っています！</p>
+            <p>農園一同お野菜一つ一つ我が子の様に大切に育てています！</p>
+            <p>須賀農園自慢の新鮮野菜是非食べてってください！</p>
+          </div>
+        </div>     
+        <div class="contents_filed_card revers">
+          <div class="card_img">
+            <img src="./img/販売リサイズ.png" alt="販売">
+          </div>
+          <div class="card_text">
+            <h2 class="text_itiba"><a href="https://gunma-sugafarm.com/about-sugafarm/oyasai-ichiba/">〖お野菜市場〗</a></h2>
+            <p>群馬の大自然でのびのび育った、</p>
+            <p>須賀農園自慢の「旬の新鮮お野菜」のご購入はこちら！</p>
+            <p>季節ごとにお野菜の種類に変動がございます。</p>
+            <p>お気軽にお問い合わせください!</p>
+          </div>
+        </div>
+        <div class="contents_filed_card">
+          <div class="card_img">
+            <img src="./img/子供リサイズ.png" alt="収穫">
+          </div>
+          <div class="card_text">
+            <h2 class="text_syukaku"><a href="./pagehtml/harvest.html">〖収穫体験〗</a></h2>
+            <p>地元で大人気の「須賀農園のお野菜狩り」</p>
+            <p>農園での出来立て野菜の収穫体験！</p>
+            <p>収穫したお野菜はもちろん持ち帰り頂けます!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ブログ欄 -->
+    <div class="contents_blog">
+      <div class="contents_blog_top">
+        <h3>農園日記</h3>
+      </div>
+      <div class="contents_blog_back">
+        <div class="contents_blog_filed">
+          <div class="contents_blog_card kakusu">
+            <img src="./img/キャベツリサイズ.png" alt="キャベツ">
+            <div class="contents_blog_card_text">
+              <h4>2022/4/4</h4>
+              <p>雨が降ったのでレッドキャベツがイキイキ育っています!</p>
+              <p>ここからキャベツの形になるなんて不思議。。。</p>
+            </div>
+          </div>     
+          <div class="contents_blog_card kakusu">
+            <img src="./img/なすリサイズ.png" alt="なす">
+            <div class="contents_blog_card_text">
+              <h4>2022/3/3</h4>
+              <p>ハウス内ではなすが元気に成長中です!</p>
+              <p>このまま病気にならず元気に育ってくれよ〜</p>
+            </div>
+          </div>
+          <div class="contents_blog_card">
+            <img src="./img/コーヒーリサイズ.png" alt="コーヒー">
+            <div class="contents_blog_card_text">
+              <h4>2022/2/2</h4>
+              <p>販売はありませんがコーヒーも育てています笑</p>
+              <p>みんなで休憩時間に飲む予定です!</p>
+              <p>ひそかな楽しみです。笑</p>
+            </div>
+          </div>
+        </div>
+        <div class="contents_blog_filed_more">
+          <button type="button" onclick="location.href='https://gunma-sugafarm.com/notice/'">More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 写真ぎゃらりー欄 -->
+    <div class="contents_photo">
+      <h3>PhotoGallery</h3>
+      <ul class="slider">
+        <li><img src="./img/スライドビニハ.png" alt=""></li>
+        <li><img src="./img/スライドきゅうり.png" alt=""></li>
+        <li><img src="./img/マッチョリサイズ.png" alt=""></li>
+        <li><img src="./img/スライドトマト.png" alt=""></li>
+        <li><img src="./img/スライドルンた.png" alt=""></li>
+      </ul>
+
+    </div>
+
+    <!-- アクセス欄 -->
+    <div class="contents_access">
+      <h3>Acces</h3>
+      <div class="contents_access_items">
+        <div class="contents_access_map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3211.841097670812!2d139.23998145055123!3d36.38884059834897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601ee50311234acf%3A0x7d8a5b43ff22b453!2z576k6aas6aCI6LOA6L6y5ZyS!5e0!3m2!1sja!2sjp!4v1650617242270!5m2!1sja!2sjp"
+          width="160%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contents_access_info">
+          <h4>会社情報</h4>
+          <p>企業名:  群馬須賀農園</p>
+          <p>所在地:  群馬県伊勢崎市香町1-302</p>
+          <p>tel: 0270-55-0934</p>
+          <p>mail: info@gunma-sugafarm.com</p>
+        </div>
+      </div>
+    </div>
+    <!-- 問い合わせフォーム -->
+    <div class="contents_form">
+      <div class="contents_form_top">
+        <h3>Contact</h3>
+      </div>
+      <div class="contents_form_text">
+        <p>購入や収穫体験、その他お問い合わせはこちら</p>
+        <p>お気軽にお問いわせください!</p>
+      </div>
+      <div class="contents_form_body">
+        <form action="" >
+          <table class="contact_table">
+            <tr>
+              <th class="contact_item">名前</th>
+              <td class="contact_body">
+                <input type="text" name="名前" class="form_text">
+              </td>
+            </tr>
+            <tr>
+              <th class="contact_item">カナ</th>
+              <td class="contact_body">
+                <input type="text" name="かな" class="form_text">
+              </td>
+            </tr>
+            <tr>
+              <th class="contact_item">メールアドレス</th>
+              <td class="contact_body">
+                <input type="email" name="メール" class="form_text">
+              </td>
+            </tr>
+            <tr>
+              <th class="contact_item">電話番号</th>
+              <td class="contact_body">
+                <input type="tel" name="電話" class="form_text">
+              </td>
+            </tr>
+            <tr>
+              <th class="contact_item">お問い合わせ内容</th>
+              <td class="contact_body">
+                <label class="form_select">
+                  <input type="checkbox" name="内容">
+                  <span class="form_select_txt">購入</span>
+                </label>
+                <label class="form_select">
+                  <input type="checkbox" name="内容">
+                  <span class="form_select_txt">収穫体験</span>
+                </label>
+                <label class="form_select">
+                  <input type="checkbox" name="内容">
+                  <span class="form_select_txt">その他</span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <th class="contact_item">詳細</th>
+              <td class="contact_body">
+                <textarea name="お問い合わせ" class="form_textarea"></textarea>
+              </td>
+            </tr>
+          </table>
+          <input class="contact_submit" type="submit" value="送信">
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+  
+  <!-- フッター 一番下の部分 -->
+  <footer>
+    <div class="footer_logo">
+      <img src="./img/rogo.png" alt="ロゴ" height="60" width="300">
+    </div>
+    <div class="footer-list">
+      <ul>
+        <li><a href="./pagehtml/about.html">about</a></li>
+        <li><a href="https://gunma-sugafarm.com/about-sugafarm/oyasai-ichiba/">shop</a></li>
+        <li><a href="./pagehtml/contact.html">contact</a></li>
+        <li><a href="./pagehtml/acess.html">acess</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ここから上にコードを書く -->
+  <!-- この中に記述していく -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- 下記一行スライド用読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(".nav_toggle").on("click", function () {
+      $(".nav_toggle, .nav").toggleClass("show");
+    });
+  </script>
+</body>
+
+</html>

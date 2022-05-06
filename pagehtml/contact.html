@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <title>harvest</title>
+</head>
+<body>
+    <!-- ヘッダー 上の部分 -->
+    <header>
+      <a href="../index.html"><img src="../img/rogo.png" alt="ロゴ" height="60" width="400"></a> 
+      <div class="menu">
+        <ul>
+          <li><a href="./about.html">群馬須賀農園とは</a></li>
+          <li><a href="https://gunma-sugafarm.com/about-sugafarm/oyasai-ichiba/">販売所</a></li>
+          <li><a href="./harvest.html">収穫体験</a></li>
+          <li><a href="./contact.html">お問い合わせ</a></li>
+          <li><a href="./acess.html">アクセス</a></li>
+        </ul>
+      </div>
+      <!-- ハンバーガーメニュー -->
+      <span class="nav_toggle">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+      <nav class="nav">
+        <ul class="nav_menu_ul">
+          <li class="nav_menu_li"><a href="./about.html">群馬須賀農園とは</a></li>
+          <li class="nav_menu_li"><a href="https://gunma-sugafarm.com/about-sugafarm/oyasai-ichiba/">販売所</a></li>
+          <li class="nav_menu_li"><a href="./harvest.html">収穫体験</a></li>
+          <li class="nav_menu_li"><a href="./contact.html">お問い合わせ</a></li>
+          <li class="nav_menu_li"><a href="./acess.html">アクセス</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- メイン部分 -->
+    <div class="contact_top"><h1>お問い合わせ</h1></div>
+    <div class="contact_main">
+      <h2><span class="under">各種お問い合わせ</span></h2>
+      <div class="contact_main_text">
+        <p>お問い合わせは、お電話・メールアドレス・下記のお問い合わせフォームよりお願いいたします。</p>
+        <p>担当者より3営業日以内にメールかお電話でご連絡させていただきます。お気軽にお問合せください。</p>
+        <p>携帯電話のメールアドレスで「メールの受信拒否、ドメイン指定受信、迷惑メール防止機能」などを設定している場合、受信ができない場合があります。</p>
+        <p>その場合はお手数ですが<a href="mailto:address">info@gunma-sugafarm.com</a>からのメールを受信できるように設定をお願いいたします。</p>
+        <p>受付時間 10:00 – 15:00 [ 年中無休 ]
+        </p>
+      </div>
+    </div>
+
+    <!-- 問い合わせフォーム -->
+    <div class="contents_form">
+      <div class="contents_form_top">
+        <h3>Contact-Form</h3>
+      </div>
+      <div class="contents_form_text">
+        <p>購入や収穫体験、その他お問い合わせはこちら</p>
+        <p>お気軽にお問いわせください!</p>
+      </div>
+      <div class="contents_form_body">
+        <form action="" >
+          <table class="contact_table">
+            <tr>
+              <th class="contact_item">名前</th>
+              <td class="contact_body">
+                <input type="text" name="名前" class="form_text">
+              </td>
+            </tr>
+            <tr>
+              <th class="contact_item">カナ</th>
+              <td class="contact_body">
+                <input type="text" name="かな" class="form_text">
+              </td>
+            </tr>
+            <tr>
+              <th class="contact_item">メールアドレス</th>
+              <td class="contact_body">
+                <input type="email" name="メール" class="form_text">
+              </td>
+            </tr>
+            <tr>
+              <th class="contact_item">電話番号</th>
+              <td class="contact_body">
+                <input type="tel" name="電話" class="form_text">
+              </td>
+            </tr>
+            <tr>
+              <th class="contact_item">お問い合わせ内容</th>
+              <td class="contact_body">
+                <label class="form_select">
+                  <input type="checkbox" name="内容">
+                  <span class="form_select_txt">購入</span>
+                </label>
+                <label class="form_select">
+                  <input type="checkbox" name="内容">
+                  <span class="form_select_txt">収穫体験</span>
+                </label>
+                <label class="form_select">
+                  <input type="checkbox" name="内容">
+                  <span class="form_select_txt">その他</span>
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <th class="contact_item">詳細</th>
+              <td class="contact_body">
+                <textarea name="お問い合わせ" class="form_textarea"></textarea>
+              </td>
+            </tr>
+          </table>
+          <input class="contact_submit" type="submit" value="送信">
+        </form>
+      </div>
+    </dev>
+
+    <!-- フッター -->
+    <footer>
+      <div class="footer_logo">
+        <img src="../img/rogo.png" alt="ロゴ" height="60" width="300">
+      </div>
+      <div class="footer-list">
+        <ul>
+          <li><a href="./about.html">about</a></li>
+          <li><a href="https://gunma-sugafarm.com/about-sugafarm/oyasai-ichiba/">shop</a></li>
+          <li><a href="./contact.html">contact</a></li>
+          <li><a href="./acess.html">acess</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+      $(".nav_toggle").on("click", function () {
+        $(".nav_toggle, .nav").toggleClass("show");
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+/* ここから下に記載していく */
+.body{
+  width: 100%;
+}
+/* header */
+.header_main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+}
+.menu li{
+  margin-right: 50px;
+  font-family: Klee;
+  font-weight: bold;
+  font-size: 20px;
+}
+.menu a{
+  color:inherit;
+}
+/* ハンバーガーメニュー */
+/* PCでは非表示にしておく */
+
+.nav_toggle{
+  display: none;
+}
+.nav {
+  display: none;
+}
+
+
+
+
+
+/* コンテンツ欄-top画像 */
+.contents_top{
+  height: 600px;
+  /* 背景画像 */
+  background-image: url(../img/畑.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* コンテンツ欄-top画像-文字アニメーション */
+.eachTextAnime{
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  font-family: Klee;
+  text-align: center;
+}
+.eachTextAnimePd{
+  padding-top: 260px;
+  padding-bottom: 40px;
+}
+.eachTextAnime span{opacity: 0;}
+.eachTextAnime.appeartext span{ animation:text_anime_on 1s ease-out forwards; }
+@keyframes text_anime_on {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+/* 須賀農園説明欄 */
+.contents_about{
+  height: 340px;
+  font-family: Klee;
+  font-weight: bold;
+  background-image: url(../img/水彩緑円.jpg);
+  background-size: cover;
+}
+.contents_about_top{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+.contents_about_text p{
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+}
+.card_text a{
+  color:inherit;
+}
+
+/* トピック欄 */
+.guide h1{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: Klee;
+  font-weight: bold;
+}
+.contents_filed_card{
+  display: flex;
+  justify-content: space-around;
+}
+.card_img{
+  width: 90%;
+}
+.card_img img{
+  width: 100%;
+}
+.revers{
+  flex-direction: row-reverse;
+}
+.card_text{
+  text-align: center;
+  background-image: url(../img/水彩緑3.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  font-family: Klee;
+}
+.text_seisan{
+  padding-top: 20px;
+  font-size: 50px;
+}
+.card_text h3{
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.under{
+  background: linear-gradient(transparent 70%, yellow 70%);
+}
+.text_itiba{
+  padding-top: 20px;
+  font-size: 50px;
+  padding-bottom: 65px;
+}
+.text_syukaku{
+  padding-top: 20px;
+  font-size: 50px;
+  padding-bottom: 85px;
+}
+.card_text p{
+  font-size: 23px;
+  padding-bottom: 20px;
+}
+
+/* 農園日記 ブログ欄 */
+.contents_blog_back{
+  background-image: url(../img/ブログ背景.jpg);
+}
+.contents_blog_top{
+  text-align: center;
+  font-family: Klee;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.contents_blog_filed{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.contents_blog_card{
+  width: 300px;
+  margin-left: 30px;
+  background-color: #f5f5f5;
+}
+.contents_blog_card img{
+  width: 300px;
+}
+.contents_blog_card_text h4{
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+.contents_blog_card_text p{
+  padding-bottom: 10px;
+}
+.contents_blog_filed_more{
+  padding-bottom: 1px;
+}
+.contents_blog_filed_more button{
+  /* ボタン */
+  width: 300px;
+  height: 60px;
+  font-size: 18px;
+  display: block;
+  margin: 30px auto;
+  color: white;
+  background-color: #3cb371;
+  font-family: Klee;
+  cursor: pointer;
+  border-radius: 100vh;
+}
+
+/* フォトギャラリー欄 */
+.contents_photo h3{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: Klee;
+  font-weight: bold;
+}
+/* 下記に項目スライダーアニメーション */
+.slider img{
+  width: 100%;
+  height: auto;
+}
+.slider .slick-slide{
+  /* slickのJSで書かれるタグ内 */
+  margin:0 10px;
+}
+
+/* アクセス */
+.contents_access{
+  font-family: Klee;
+}
+.contents_access h3{
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.contents_access_info{
+  background-image: url(../img/水彩緑円.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.contents_access_info h4{
+  font-weight: bold;
+  padding-top: 60px;
+  text-align: center;
+  font-size: 30px;
+}
+.contents_access_items{
+  display: flex;
+  justify-content: space-around;
+}
+.contents_access_info p{
+  font-size: 25px;
+  padding-top: 40px;
+}
+
+/* お問い合わせフォーム */
+.contents_form_top h3{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: Klee;
+  font-weight: bold;
+}
+.contents_form_text p{
+  text-align: center;
+  font-family: Klee;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+/*      お問い合わせフォーム内テーブル */
+.contact_table{
+  margin: 20px auto;
+  width: 60%;
+  border: 1px black solid ;
+}
+/* .contents_form_body{
+  background-image: url(../img/フレーム１.jpg);
+  background-size: cover;
+} */
+.contact_item{
+  text-align: center;
+  width: 30%;
+  background-color: #fffaf0;
+  vertical-align: middle;
+}
+.contact_body{
+  width: 70%;
+}
+.form_text{
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+}
+.form_textarea{
+  width: 80%;
+  height: 80px;
+  padding: 10px;
+  margin: 10px;
+}
+.form_select{
+  display: block;
+  margin-top: 12px ;
+  margin-bottom: 12px;
+  padding-left: 8px;
+}
+.form_select_txt{
+  padding-left: 20px;
+}
+td{
+  border-left: 1px black solid;
+}
+tr{
+  border-top:  1px black solid;
+  border-bottom: 1px black solid;
+} 
+.contact_submit{
+  /* 送信ボタン */
+  width: 250px;
+  background-color: #3cb371;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto;
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 100vh;
+  cursor: pointer;
+}
+
+/* footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: #3cb371 1px solid;
+}
+footer ul{
+  display: flex;
+}
+footer li{
+  margin-right: 30px;
+  font-weight: bold;
+  font-size: 25px;
+  color:inherit;
+  height: 30px;
+}
+footer li a{
+  color:inherit;
+}
+
+
+@media screen and (max-width: 480px) {
+  .menu{
+    display: none;
+  }
+  .nav_toggle {
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+    margin-right: 10px;
+    z-index: 2;
+  }
+  .nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  .nav_toggle i:nth-child(1) {
+    top: 0;
+  }
+  .nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .nav_toggle i:nth-child(3) {
+    bottom: 0;
+  }
+    /* クリックされた後のハンバーガーのマーク */
+    .nav_toggle.show i:nth-child(1) {
+      transform: translateY(10px) rotate(-45deg);
+    }
+    .nav_toggle.show i:nth-child(2) {
+      opacity: 0;
+    }
+    .nav_toggle.show i:nth-child(3) {
+      transform: translateY(-12px) rotate(45deg);
+    }
+  
+    /* クリックで表示されるメニュー：クリックされる前 */
+    .nav {
+      display: flex;
+      position: absolute;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding-top: 50px;
+      height: 100vh;
+      top: 0; 
+      left: 0;
+      right: 0;
+      bottom: 0; 
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s, visibility 0.5s;
+      background-color: rgba(0,0,0,0.8);
+      z-index: 1;
+    }
+    .nav_menu_li {
+      padding-top: 10px;
+      height: 30px;
+      width: 150px;
+      margin-bottom: 20px;
+      margin-top: 25px;
+      background-color: #f0e68c;
+      border: #f0e68c 1px solid;
+      border-radius: 100vh;
+      text-align: center;
+    }
+    .nav_menu_li a {
+      color: black;
+      text-decoration: none;
+      font-family: Klee;
+    }
+  
+    /* クリックで表示されるメニュー：クリックされた後 */
+    .nav.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .eachTextAnime{
+      font-size: 20px ;
+    }
+    .contents_about_text p{
+      font-size: 13px ;
+    }
+    .contents_filed_card{
+      display: block ;
+    }
+    .card_img{
+      width: 100%;
+    }
+    .card_text{
+      width: 100% ;
+    }
+    .text_seisan{
+      font-size: 25px ;
+    }
+    .card_text h3{
+      font-size: 20px ;
+      padding-bottom: 20px ;
+    }
+    .card_text p{
+      font-size: 15px ;
+      padding-bottom: 10px;
+    }
+    .text_itiba{
+      font-size: 25px ;
+      padding-bottom: 10px ;
+    }
+    .text_syukaku{
+      font-size: 25px ;
+      padding-bottom: 10px ;
+    }
+    .contents_access_items{
+      display: block ;
+    }
+    .contents_blog_back{
+      overflow: scroll ;
+    }
+    .contents_access_info{
+      text-align: center;
+    }
+    .contact_table{
+      width: 100% ;
+    }
+    .footer-list{
+      display: none;
+    }
+    .contents_access_map iframe{
+      width: 100%;
+    }
+    .contents_blog_filed{
+      flex-direction: column;
+    }
+    .kakusu{
+      display: none;
+    }
+    .contents_blog_card{
+      margin: 0 auto;
+    }
+    .header_main img{
+      width: 80%;
+    }
+}
